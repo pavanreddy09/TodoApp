@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1>TODO APP</h1>
+    </div>
+    <div class="main">
+      <div class="form-div">
+        <h2>ADD TASK</h2>
+        <form>
+          <div class="inside-div">
+            <label for="in">Task Name</label>
+            <input
+              type="text"
+              name="in"
+              placeholder="Enter task..."
+              id="inputtext"
+              required
+            />
+          </div>
+          <div class="inside-div">
+            <label for="date">Due Date</label>
+            <input type="date" name="date" id="inputdate" required />
+          </div>
+          <div class="inside-div">
+            <label for="in">Description</label>
+            <textarea
+              placeholder="Description..."
+              rows="10"
+              cols="40"
+              required
+            ></textarea>
+          </div>
+          <div class="button-div">
+            <button>ADD</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="taskslist">
+        <h2>YOUR TASKS</h2>
+        <div class="list">
+          <!-- tasks  -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
