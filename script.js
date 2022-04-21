@@ -40,8 +40,8 @@ let addTask = () => {
             <div>
             <button onclick="progress(this)"class="progress pcolor">Mark as Incomplete!</button>
             </div>
-            <div class="hide">
-            <button onclick="editTask(this)" class="edit">Edit</button>
+            <div>
+            <button onclick="editTask(this)" class="edit hide">Edit</button>
             <button onclick="deleteTask(this)" class="del">Delete</button>
             </div>
             </div>
@@ -97,7 +97,7 @@ let editTask = (e) => {
 
 // task progress
 let progress = (e) => {
-  e.parentElement.nextElementSibling.classList.toggle("hide");
+  e.parentElement.nextElementSibling.children[0].classList.toggle("hide");
 
   e.parentElement.parentElement.parentElement.classList.toggle("active");
   if (tasks[e.parentElement.parentElement.parentElement.id].completed == true) {
